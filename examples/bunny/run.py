@@ -10,11 +10,8 @@ if __name__ == '__main__':
     argument_parser.add_argument(
         '--target_folder',
         metavar='FOLDER', type=make_folder)
-    argument_parser.add_argument(
-        '--video',
-        required=True)
 
     args = argument_parser.parse_args()
-    path = join(args.target_folder, args.video)
-    shutil.copy(args.video, path)
-    print('horse_video_path = %s' % path)
+    path = join(args.target_folder, 'bunny.mp4')
+    shutil.copy('bunny.mp4', path)
+    print('bunny_video_path = %s' % path)
