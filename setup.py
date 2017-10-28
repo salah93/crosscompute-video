@@ -11,7 +11,7 @@ DESCRIPTION = '\n\n'.join(open(join(FOLDER, x)).read().strip() for x in [
     'README.rst'])
 setup(
     name='crosscompute-video',
-    version='0.1',
+    version='0.1.1',
     description='Video data type plugin for CrossCompute',
     long_description=DESCRIPTION,
     classifiers=[
@@ -31,6 +31,6 @@ setup(
         'pytest-runner'
     ],
     install_requires=[
-        'crosscompute>=0.6.7',
+        'crosscompute>=0.7.0',
     ],
     entry_points=ENTRY_POINTS)
