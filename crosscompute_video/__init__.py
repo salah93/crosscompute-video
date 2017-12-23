@@ -1,4 +1,4 @@
-from crosscompute.scripts.serve import get_result_file_url
+from crosscompute.scripts.serve import get_file_url
 from crosscompute.types import DataType
 
 
@@ -14,4 +14,4 @@ class VideoType(DataType):
 
     @classmethod
     def render(Class, path):
-        return get_result_file_url(path)
+        return get_file_url(path)
